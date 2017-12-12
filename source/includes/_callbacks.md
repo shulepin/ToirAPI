@@ -46,8 +46,8 @@ end
 
 Parameter | Type | Description
 --------- | ------- | -----------
-[unit](https://shulepin.github.io/ToirAPI/#errors) | table | description
-buff | table | description
+[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
+[buff](https://shulepin.github.io/ToirAPI/#onevent-buff) | table | description
 stacks | number | description
 
 ``` lua
