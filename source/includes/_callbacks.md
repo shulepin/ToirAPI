@@ -46,7 +46,7 @@ end
 
 Parameter | Type | Description
 --------- | ------- | -----------
-unit | table | description
+[unit](https://shulepin.github.io/ToirAPI/#errors) | table | description
 buff | table | description
 stacks | number | description
 
