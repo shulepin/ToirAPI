@@ -8,6 +8,7 @@ toc_footers:
   - <a href='https://toirplus.com/'>TOIR forum</a>
 
 includes:
+  - callbacks
   - errors
 
 search: true
