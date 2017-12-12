@@ -9,9 +9,10 @@ toc_footers:
 
 includes:
   - callbacks
-  - errors
+  - global
   - onevunit
   - onevbuff
+  - onevspell
 
 search: true
 ---
