@@ -222,6 +222,14 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
+            <a href="#callback-functions" class="toc-h1 toc-link" data-title="Callback Functions">Callback Functions</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#onload" class="toc-h2 toc-link" data-title="OnLoad()">OnLoad()</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
       </div>
@@ -236,7 +244,17 @@
 <p>Welcome to the TOIR API ! </p>
 
 <p>You can view code examples in the dark area to the right.</p>
-<h1 id='errors'>Errors</h1>
+<h1 id='callback-functions'>Callback Functions</h1><h2 id='onload'>OnLoad()</h2>
+<ul>
+<li>Called when a script is loaded.</li>
+</ul>
+
+<blockquote>
+</blockquote>
+<pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnLoad</span><span class="p">()</span>
+    <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnLoad works"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre><h1 id='errors'>Errors</h1>
 <aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files...just save them to the `includes` folder and add them to the top of your `index.md`'s frontmatter. Files are included in the order listed.</aside>
 
 <p>The Kittn API uses the following error codes:</p>
