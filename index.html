@@ -227,6 +227,18 @@
                   <li>
                     <a href="#onload" class="toc-h2 toc-link" data-title="OnLoad()">OnLoad()</a>
                   </li>
+                  <li>
+                    <a href="#ontick" class="toc-h2 toc-link" data-title="OnTick()">OnTick()</a>
+                  </li>
+                  <li>
+                    <a href="#onupdate" class="toc-h2 toc-link" data-title="OnUpdate()">OnUpdate()</a>
+                  </li>
+                  <li>
+                    <a href="#ondraw" class="toc-h2 toc-link" data-title="OnDraw()">OnDraw()</a>
+                  </li>
+                  <li>
+                    <a href="#updatebuff-unit-buff-stacks" class="toc-h2 toc-link" data-title="UpdateBuff(unit, buff, stacks)">UpdateBuff(unit, buff, stacks)</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -248,11 +260,60 @@
 <ul>
 <li>Called when a script is loaded.</li>
 </ul>
-
-<blockquote>
-</blockquote>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnLoad</span><span class="p">()</span>
     <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnLoad works"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre><h2 id='ontick'>OnTick()</h2>
+<ul>
+<li>Trigger every tick.</li>
+</ul>
+<pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnTick</span><span class="p">()</span>
+    <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnTick works"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre><h2 id='onupdate'>OnUpdate()</h2>
+<ul>
+<li>Trigger every screen updates.</li>
+</ul>
+<pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnUpdate</span><span class="p">()</span>
+    <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnUpdate works"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre><h2 id='ondraw'>OnDraw()</h2>
+<ul>
+<li>Trigger every screen updates.</li>
+</ul>
+<pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnDraw</span><span class="p">()</span>
+    <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnDraw works"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre><h2 id='updatebuff-unit-buff-stacks'>UpdateBuff(unit, buff, stacks)</h2>
+<ul>
+<li>Trigger Everytime a buff is Updated.</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>unit</td>
+<td>table</td>
+<td>description</td>
+</tr>
+<tr>
+<td>buff</td>
+<td>table</td>
+<td>description</td>
+</tr>
+<tr>
+<td>stacks</td>
+<td>number</td>
+<td>description</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnUpdateBuff</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="n">buff</span><span class="p">,</span> <span class="n">stacks</span><span class="p">)</span>
+    <span class="c1">--</span>
 <span class="k">end</span>
 </code></pre><h1 id='errors'>Errors</h1>
 <aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files...just save them to the `includes` folder and add them to the top of your `index.md`'s frontmatter. Files are included in the order listed.</aside>
