@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>TOIR</title>
+    <title>TOIR API</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -225,40 +225,40 @@
             <a href="#events" class="toc-h1 toc-link" data-title="Events">Events</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#onload" class="toc-h2 toc-link" data-title="OnLoad()">OnLoad()</a>
+                    <a href="#onload" class="toc-h2 toc-link" data-title="OnLoad">OnLoad</a>
                   </li>
                   <li>
-                    <a href="#ontick" class="toc-h2 toc-link" data-title="OnTick()">OnTick()</a>
+                    <a href="#ontick" class="toc-h2 toc-link" data-title="OnTick">OnTick</a>
                   </li>
                   <li>
-                    <a href="#onupdate" class="toc-h2 toc-link" data-title="OnUpdate()">OnUpdate()</a>
+                    <a href="#onupdate" class="toc-h2 toc-link" data-title="OnUpdate">OnUpdate</a>
                   </li>
                   <li>
-                    <a href="#ondraw" class="toc-h2 toc-link" data-title="OnDraw()">OnDraw()</a>
+                    <a href="#ondraw" class="toc-h2 toc-link" data-title="OnDraw">OnDraw</a>
                   </li>
                   <li>
-                    <a href="#onupdatebuff-unit-buff-stacks" class="toc-h2 toc-link" data-title="OnUpdateBuff(unit, buff, stacks)">OnUpdateBuff(unit, buff, stacks)</a>
+                    <a href="#onupdatebuff" class="toc-h2 toc-link" data-title="OnUpdateBuff">OnUpdateBuff</a>
                   </li>
                   <li>
-                    <a href="#onremovebuff-unit-buff" class="toc-h2 toc-link" data-title="OnRemoveBuff(unit, buff)">OnRemoveBuff(unit, buff)</a>
+                    <a href="#onremovebuff" class="toc-h2 toc-link" data-title="OnRemoveBuff">OnRemoveBuff</a>
                   </li>
                   <li>
-                    <a href="#onprocessspell-unit-spell" class="toc-h2 toc-link" data-title="OnProcessSpell(unit, spell)">OnProcessSpell(unit, spell)</a>
+                    <a href="#onprocessspell" class="toc-h2 toc-link" data-title="OnProcessSpell">OnProcessSpell</a>
                   </li>
                   <li>
-                    <a href="#oncreateobject-unit" class="toc-h2 toc-link" data-title="OnCreateObject(unit)">OnCreateObject(unit)</a>
+                    <a href="#oncreateobject" class="toc-h2 toc-link" data-title="OnCreateObject">OnCreateObject</a>
                   </li>
                   <li>
-                    <a href="#ondeleteobject-unit" class="toc-h2 toc-link" data-title="OnDeleteObject(unit)">OnDeleteObject(unit)</a>
+                    <a href="#ondeleteobject" class="toc-h2 toc-link" data-title="OnDeleteObject">OnDeleteObject</a>
                   </li>
                   <li>
-                    <a href="#onwndmsg-message-key" class="toc-h2 toc-link" data-title="OnWndMsg(message, key)">OnWndMsg(message, key)</a>
+                    <a href="#onwndmsg" class="toc-h2 toc-link" data-title="OnWndMsg">OnWndMsg</a>
                   </li>
                   <li>
-                    <a href="#ondocast-unit-spell" class="toc-h2 toc-link" data-title="OnDoCast(unit, spell)">OnDoCast(unit, spell)</a>
+                    <a href="#ondocast" class="toc-h2 toc-link" data-title="OnDoCast">OnDoCast</a>
                   </li>
                   <li>
-                    <a href="#onplayanimation-unit-animation" class="toc-h2 toc-link" data-title="OnPlayAnimation(unit, animation)">OnPlayAnimation(unit, animation)</a>
+                    <a href="#onplayanimation" class="toc-h2 toc-link" data-title="OnPlayAnimation">OnPlayAnimation</a>
                   </li>
               </ul>
           </li>
@@ -266,178 +266,385 @@
             <a href="#global-functions" class="toc-h1 toc-link" data-title="Global Functions">Global Functions</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#includefile-filename" class="toc-h2 toc-link" data-title="IncludeFile(fileName)">IncludeFile(fileName)</a>
+                    <a href="#includefile" class="toc-h2 toc-link" data-title="IncludeFile">IncludeFile</a>
                   </li>
                   <li>
-                    <a href="#getscriptpath" class="toc-h2 toc-link" data-title="GetScriptPath()">GetScriptPath()</a>
+                    <a href="#getscriptpath" class="toc-h2 toc-link" data-title="GetScriptPath">GetScriptPath</a>
                   </li>
                   <li>
-                    <a href="#setluacombo-bool-bisluacombo" class="toc-h2 toc-link" data-title="SetLuaCombo(bool bIsLuaCombo)">SetLuaCombo(bool bIsLuaCombo)</a>
+                    <a href="#setluacombo" class="toc-h2 toc-link" data-title="SetLuaCombo">SetLuaCombo</a>
                   </li>
                   <li>
-                    <a href="#setluaharass-bool-bisluaharass" class="toc-h2 toc-link" data-title="SetLuaHarass(bool bIsLuaHarass)">SetLuaHarass(bool bIsLuaHarass)</a>
+                    <a href="#setluaharass" class="toc-h2 toc-link" data-title="SetLuaHarass">SetLuaHarass</a>
                   </li>
                   <li>
-                    <a href="#setlualaneclear-bool-bislualaneclear" class="toc-h2 toc-link" data-title="SetLuaLaneClear(bool bIsLuaLaneClear)">SetLuaLaneClear(bool bIsLuaLaneClear)</a>
+                    <a href="#setlualaneclear" class="toc-h2 toc-link" data-title="SetLuaLaneClear">SetLuaLaneClear</a>
                   </li>
                   <li>
-                    <a href="#setluabasicattackonly-bool-bisluabaonly" class="toc-h2 toc-link" data-title="SetLuaBasicAttackOnly(bool bIsLuaBaOnly)">SetLuaBasicAttackOnly(bool bIsLuaBaOnly)</a>
+                    <a href="#setluabasicattackonly" class="toc-h2 toc-link" data-title="SetLuaBasicAttackOnly">SetLuaBasicAttackOnly</a>
                   </li>
                   <li>
-                    <a href="#setluamoveonly-bool-nisluamoveonly" class="toc-h2 toc-link" data-title="SetLuaMoveOnly(bool nIsLuaMoveOnly)">SetLuaMoveOnly(bool nIsLuaMoveOnly)</a>
+                    <a href="#setluamoveonly" class="toc-h2 toc-link" data-title="SetLuaMoveOnly">SetLuaMoveOnly</a>
                   </li>
                   <li>
-                    <a href="#getdistance2d-fposx1-fposz1-fposx2-fposz2" class="toc-h2 toc-link" data-title="GetDistance2D(## fPosX1, ## fPosZ1, ## fPosX2, ## fPosZ2)">GetDistance2D(## fPosX1, ## fPosZ1, ## fPosX2, ## fPosZ2)</a>
+                    <a href="#getdistance2d" class="toc-h2 toc-link" data-title="GetDistance2D">GetDistance2D</a>
                   </li>
                   <li>
-                    <a href="#setevade-bool" class="toc-h2 toc-link" data-title="SetEvade(bool)">SetEvade(bool)</a>
+                    <a href="#setevade" class="toc-h2 toc-link" data-title="SetEvade">SetEvade</a>
                   </li>
                   <li>
-                    <a href="#getevade" class="toc-h2 toc-link" data-title="GetEvade()">GetEvade()</a>
+                    <a href="#getevade" class="toc-h2 toc-link" data-title="GetEvade">GetEvade</a>
                   </li>
                   <li>
-                    <a href="#setprinterrorlog-bool" class="toc-h2 toc-link" data-title="SetPrintErrorLog(bool)">SetPrintErrorLog(bool)</a>
+                    <a href="#setprinterrorlog" class="toc-h2 toc-link" data-title="SetPrintErrorLog">SetPrintErrorLog</a>
                   </li>
                   <li>
-                    <a href="#getkeypress-ncode" class="toc-h2 toc-link" data-title="GetKeyPress(nCode)">GetKeyPress(nCode)</a>
+                    <a href="#getkeypress" class="toc-h2 toc-link" data-title="GetKeyPress">GetKeyPress</a>
                   </li>
                   <li>
-                    <a href="#getkeycode" class="toc-h2 toc-link" data-title="GetKeyCode()">GetKeyCode()</a>
+                    <a href="#getkeycode" class="toc-h2 toc-link" data-title="GetKeyCode">GetKeyCode</a>
                   </li>
                   <li>
-                    <a href="#isdodging" class="toc-h2 toc-link" data-title="IsDodging()">IsDodging()</a>
+                    <a href="#isdodging" class="toc-h2 toc-link" data-title="IsDodging">IsDodging</a>
                   </li>
                   <li>
-                    <a href="#istyping" class="toc-h2 toc-link" data-title="IsTyping()">IsTyping()</a>
+                    <a href="#istyping" class="toc-h2 toc-link" data-title="IsTyping">IsTyping</a>
                   </li>
                   <li>
-                    <a href="#iswall-fposx-fposy-fposz" class="toc-h2 toc-link" data-title="IsWall(## fPosX, ## fPosY, ## fPosZ)">IsWall(## fPosX, ## fPosY, ## fPosZ)</a>
+                    <a href="#iswall" class="toc-h2 toc-link" data-title="IsWall">IsWall</a>
                   </li>
                   <li>
-                    <a href="#getmousepos" class="toc-h2 toc-link" data-title="GetMousePos()">GetMousePos()</a>
+                    <a href="#getmousepos" class="toc-h2 toc-link" data-title="GetMousePos">GetMousePos</a>
                   </li>
                   <li>
-                    <a href="#getcursorpos" class="toc-h2 toc-link" data-title="GetCursorPos()">GetCursorPos()</a>
+                    <a href="#getcursorpos" class="toc-h2 toc-link" data-title="GetCursorPos">GetCursorPos</a>
                   </li>
                   <li>
-                    <a href="#getmouseposx" class="toc-h2 toc-link" data-title="GetMousePosX()">GetMousePosX()</a>
+                    <a href="#getmouseposx" class="toc-h2 toc-link" data-title="GetMousePosX">GetMousePosX</a>
                   </li>
                   <li>
-                    <a href="#getmouseposy" class="toc-h2 toc-link" data-title="GetMousePosY()">GetMousePosY()</a>
+                    <a href="#getmouseposy" class="toc-h2 toc-link" data-title="GetMousePosY">GetMousePosY</a>
                   </li>
                   <li>
-                    <a href="#getmouserposz" class="toc-h2 toc-link" data-title="GetMouserPosZ()">GetMouserPosZ()</a>
+                    <a href="#getmouserposz" class="toc-h2 toc-link" data-title="GetMouserPosZ">GetMouserPosZ</a>
                   </li>
                   <li>
-                    <a href="#gettimegame" class="toc-h2 toc-link" data-title="GetTimeGame()">GetTimeGame()</a>
+                    <a href="#gettimegame" class="toc-h2 toc-link" data-title="GetTimeGame">GetTimeGame</a>
                   </li>
                   <li>
-                    <a href="#gettickcount" class="toc-h2 toc-link" data-title="GetTickCount()">GetTickCount()</a>
+                    <a href="#gettickcount" class="toc-h2 toc-link" data-title="GetTickCount">GetTickCount</a>
                   </li>
                   <li>
-                    <a href="#getlatency" class="toc-h2 toc-link" data-title="GetLatency()">GetLatency()</a>
+                    <a href="#getlatency" class="toc-h2 toc-link" data-title="GetLatency">GetLatency</a>
                   </li>
                   <li>
-                    <a href="#upspelllevel-int-nspellindex" class="toc-h2 toc-link" data-title="UpSpellLevel(int nSpellIndex)">UpSpellLevel(int nSpellIndex)</a>
+                    <a href="#upspelllevel" class="toc-h2 toc-link" data-title="UpSpellLevel">UpSpellLevel</a>
                   </li>
                   <li>
-                    <a href="#setting_iscombouseq" class="toc-h2 toc-link" data-title="Setting_IsComboUseQ()">Setting_IsComboUseQ()</a>
+                    <a href="#setting_iscombouseq" class="toc-h2 toc-link" data-title="Setting_IsComboUseQ">Setting_IsComboUseQ</a>
                   </li>
                   <li>
-                    <a href="#setting_iscombousew" class="toc-h2 toc-link" data-title="Setting_IsComboUseW()">Setting_IsComboUseW()</a>
+                    <a href="#setting_iscombousew" class="toc-h2 toc-link" data-title="Setting_IsComboUseW">Setting_IsComboUseW</a>
                   </li>
                   <li>
-                    <a href="#setting_iscombousee" class="toc-h2 toc-link" data-title="Setting_IsComboUseE()">Setting_IsComboUseE()</a>
+                    <a href="#setting_iscombousee" class="toc-h2 toc-link" data-title="Setting_IsComboUseE">Setting_IsComboUseE</a>
                   </li>
                   <li>
-                    <a href="#setting_iscombouser" class="toc-h2 toc-link" data-title="Setting_IsComboUseR()">Setting_IsComboUseR()</a>
+                    <a href="#setting_iscombouser" class="toc-h2 toc-link" data-title="Setting_IsComboUseR">Setting_IsComboUseR</a>
                   </li>
                   <li>
-                    <a href="#setting_isharassuseq" class="toc-h2 toc-link" data-title="Setting_IsHarassUseQ()">Setting_IsHarassUseQ()</a>
+                    <a href="#setting_isharassuseq" class="toc-h2 toc-link" data-title="Setting_IsHarassUseQ">Setting_IsHarassUseQ</a>
                   </li>
                   <li>
-                    <a href="#setting_isharassusew" class="toc-h2 toc-link" data-title="Setting_IsHarassUseW()">Setting_IsHarassUseW()</a>
+                    <a href="#setting_isharassusew" class="toc-h2 toc-link" data-title="Setting_IsHarassUseW">Setting_IsHarassUseW</a>
                   </li>
                   <li>
-                    <a href="#setting_isharassusee" class="toc-h2 toc-link" data-title="Setting_IsHarassUseE()">Setting_IsHarassUseE()</a>
+                    <a href="#setting_isharassusee" class="toc-h2 toc-link" data-title="Setting_IsHarassUseE">Setting_IsHarassUseE</a>
                   </li>
                   <li>
-                    <a href="#setting_isharassuser" class="toc-h2 toc-link" data-title="Setting_IsHarassUseR()">Setting_IsHarassUseR()</a>
+                    <a href="#setting_isharassuser" class="toc-h2 toc-link" data-title="Setting_IsHarassUseR">Setting_IsHarassUseR</a>
                   </li>
                   <li>
-                    <a href="#setting_islaneclearuseq" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseQ()">Setting_IsLaneClearUseQ()</a>
+                    <a href="#setting_islaneclearuseq" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseQ">Setting_IsLaneClearUseQ</a>
                   </li>
                   <li>
-                    <a href="#setting_islaneclearusew" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseW()">Setting_IsLaneClearUseW()</a>
+                    <a href="#setting_islaneclearusew" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseW">Setting_IsLaneClearUseW</a>
                   </li>
                   <li>
-                    <a href="#setting_islaneclearusee" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseE()">Setting_IsLaneClearUseE()</a>
+                    <a href="#setting_islaneclearusee" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseE">Setting_IsLaneClearUseE</a>
                   </li>
                   <li>
-                    <a href="#setting_islaneclearuser" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseR()">Setting_IsLaneClearUseR()</a>
+                    <a href="#setting_islaneclearuser" class="toc-h2 toc-link" data-title="Setting_IsLaneClearUseR">Setting_IsLaneClearUseR</a>
                   </li>
                   <li>
-                    <a href="#cancast-int-nspellindex" class="toc-h2 toc-link" data-title="CanCast(int nSpellIndex)">CanCast(int nSpellIndex)</a>
+                    <a href="#cancast" class="toc-h2 toc-link" data-title="CanCast">CanCast</a>
                   </li>
                   <li>
-                    <a href="#castspelltarget-int-pobject-int-nspellindex" class="toc-h2 toc-link" data-title="CastSpellTarget(int pObject, int nSpellIndex)">CastSpellTarget(int pObject, int nSpellIndex)</a>
+                    <a href="#castspelltarget" class="toc-h2 toc-link" data-title="CastSpellTarget">CastSpellTarget</a>
                   </li>
                   <li>
-                    <a href="#castspelltopos-fposx-fposz-int-nspellindex" class="toc-h2 toc-link" data-title="CastSpellToPos(## fPosX, ## fPosZ, int nSpellIndex">CastSpellToPos(## fPosX, ## fPosZ, int nSpellIndex</a>
+                    <a href="#castspelltopos" class="toc-h2 toc-link" data-title="CastSpellToPos">CastSpellToPos</a>
                   </li>
                   <li>
-                    <a href="#castspelltopos_2-fstartposx-fstartposz-fendposx-fendposz-int-nspellindex" class="toc-h2 toc-link" data-title="CastSpellToPos_2(## fStartPosX, ## fStartPosZ, ## fEndPosX, ## fEndPosZ, int nSpellIndex)">CastSpellToPos_2(## fStartPosX, ## fStartPosZ, ## fEndPosX, ## fEndPosZ, int nSpellIndex)</a>
+                    <a href="#castspelltopos_2" class="toc-h2 toc-link" data-title="CastSpellToPos_2">CastSpellToPos_2</a>
                   </li>
                   <li>
-                    <a href="#castspelltopredictionpos-int-pobject-int-nspellindex-ndistantprediction" class="toc-h2 toc-link" data-title="CastSpellToPredictionPos(int pObject, int nSpellIndex, ## nDistantPrediction)">CastSpellToPredictionPos(int pObject, int nSpellIndex, ## nDistantPrediction)</a>
+                    <a href="#castspelltopredictionpos" class="toc-h2 toc-link" data-title="CastSpellToPredictionPos">CastSpellToPredictionPos</a>
                   </li>
                   <li>
-                    <a href="#releasespelltopos-fposx-fposz-int-nspellindex" class="toc-h2 toc-link" data-title="ReleaseSpellToPos(## fPosX, ## fPosZ, int nSpellIndex)">ReleaseSpellToPos(## fPosX, ## fPosZ, int nSpellIndex)</a>
+                    <a href="#releasespelltopos" class="toc-h2 toc-link" data-title="ReleaseSpellToPos">ReleaseSpellToPos</a>
                   </li>
                   <li>
-                    <a href="#releasespelltopredictionpos-int-pobject-int-nspellindex-ndistantprediction" class="toc-h2 toc-link" data-title="ReleaseSpellToPredictionPos(int pObject, int nSpellIndex, ## nDistantPrediction)">ReleaseSpellToPredictionPos(int pObject, int nSpellIndex, ## nDistantPrediction)</a>
+                    <a href="#releasespelltopredictionpos" class="toc-h2 toc-link" data-title="ReleaseSpellToPredictionPos">ReleaseSpellToPredictionPos</a>
                   </li>
                   <li>
-                    <a href="#releasespelltopredictionpos_2-int-pobject-int-nspellindex-ndistantprediction" class="toc-h2 toc-link" data-title="ReleaseSpellToPredictionPos_2(int pObject, int nSpellIndex, ## nDistantPrediction)">ReleaseSpellToPredictionPos_2(int pObject, int nSpellIndex, ## nDistantPrediction)</a>
+                    <a href="#releasespelltopredictionpos_2" class="toc-h2 toc-link" data-title="ReleaseSpellToPredictionPos_2">ReleaseSpellToPredictionPos_2</a>
                   </li>
                   <li>
-                    <a href="#castspelltargetbyname-int-pobject-spellname" class="toc-h2 toc-link" data-title="CastSpellTargetByName(int pObject, ## SpellName)">CastSpellTargetByName(int pObject, ## SpellName)</a>
+                    <a href="#castspelltargetbyname" class="toc-h2 toc-link" data-title="CastSpellTargetByName">CastSpellTargetByName</a>
                   </li>
                   <li>
-                    <a href="#getspellindexbyname-spellname" class="toc-h2 toc-link" data-title="GetSpellIndexByName(## SpellName)">GetSpellIndexByName(## SpellName)</a>
+                    <a href="#getspellindexbyname" class="toc-h2 toc-link" data-title="GetSpellIndexByName">GetSpellIndexByName</a>
                   </li>
                   <li>
-                    <a href="#getspellnamebyindex-int-pobject-int-nspellindex" class="toc-h2 toc-link" data-title="GetSpellNameByIndex(int pObject, int nSpellIndex)">GetSpellNameByIndex(int pObject, int nSpellIndex)</a>
+                    <a href="#getspellnamebyindex" class="toc-h2 toc-link" data-title="GetSpellNameByIndex">GetSpellNameByIndex</a>
                   </li>
                   <li>
-                    <a href="#getspelllevel-int-pobject-int-nspellindex" class="toc-h2 toc-link" data-title="GetSpellLevel(int pObject, int nSpellIndex)">GetSpellLevel(int pObject, int nSpellIndex)</a>
+                    <a href="#getspelllevel" class="toc-h2 toc-link" data-title="GetSpellLevel">GetSpellLevel</a>
                   </li>
                   <li>
-                    <a href="#getcdspell-int-pobject-int-nspellindex" class="toc-h2 toc-link" data-title="GetCDSpell(int pObject, int nSpellIndex)">GetCDSpell(int pObject, int nSpellIndex)</a>
+                    <a href="#getcdspell" class="toc-h2 toc-link" data-title="GetCDSpell">GetCDSpell</a>
                   </li>
                   <li>
-                    <a href="#getcdexpiresspell-int-pobject-int-nspellindex" class="toc-h2 toc-link" data-title="GetCDExpiresSpell(int pObject, int nSpellIndex)">GetCDExpiresSpell(int pObject, int nSpellIndex)</a>
+                    <a href="#getcdexpiresspell" class="toc-h2 toc-link" data-title="GetCDExpiresSpell">GetCDExpiresSpell</a>
                   </li>
                   <li>
-                    <a href="#getammospell-pobject-nindex" class="toc-h2 toc-link" data-title="GetAmmoSpell(pObject, nIndex)">GetAmmoSpell(pObject, nIndex)</a>
+                    <a href="#getammospell" class="toc-h2 toc-link" data-title="GetAmmoSpell">GetAmmoSpell</a>
                   </li>
                   <li>
-                    <a href="#gettogglespell-pobject-nindex" class="toc-h2 toc-link" data-title="GetToggleSpell(pObject, nIndex)">GetToggleSpell(pObject, nIndex)</a>
+                    <a href="#gettogglespell" class="toc-h2 toc-link" data-title="GetToggleSpell">GetToggleSpell</a>
                   </li>
                   <li>
-                    <a href="#basicattack-int-pobject" class="toc-h2 toc-link" data-title="BasicAttack(int pObject)">BasicAttack(int pObject)</a>
+                    <a href="#basicattack" class="toc-h2 toc-link" data-title="BasicAttack">BasicAttack</a>
                   </li>
                   <li>
-                    <a href="#getwindupba-int-pobject" class="toc-h2 toc-link" data-title="GetWindupBA(int pObject)">GetWindupBA(int pObject)</a>
+                    <a href="#getwindupba" class="toc-h2 toc-link" data-title="GetWindupBA">GetWindupBA</a>
                   </li>
                   <li>
-                    <a href="#getcdba-int-pobject" class="toc-h2 toc-link" data-title="GetCDBA(int pObject)">GetCDBA(int pObject)</a>
+                    <a href="#getcdba" class="toc-h2 toc-link" data-title="GetCDBA">GetCDBA</a>
                   </li>
                   <li>
-                    <a href="#getcdexpiresba-int-pobject" class="toc-h2 toc-link" data-title="GetCDExpiresBA(int pObject)">GetCDExpiresBA(int pObject)</a>
+                    <a href="#getcdexpiresba" class="toc-h2 toc-link" data-title="GetCDExpiresBA">GetCDExpiresBA</a>
                   </li>
                   <li>
-                    <a href="#getaadamagehitenemy-int-pobj_enemy" class="toc-h2 toc-link" data-title="GetAADamageHitEnemy(int pObj_Enemy)">GetAADamageHitEnemy(int pObj_Enemy)</a>
+                    <a href="#getaadamagehitenemy" class="toc-h2 toc-link" data-title="GetAADamageHitEnemy">GetAADamageHitEnemy</a>
+                  </li>
+                  <li>
+                    <a href="#getspellcasting" class="toc-h2 toc-link" data-title="GetSpellCasting">GetSpellCasting</a>
+                  </li>
+                  <li>
+                    <a href="#getname_casting" class="toc-h2 toc-link" data-title="GetName_Casting">GetName_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getownerid_casting" class="toc-h2 toc-link" data-title="GetOwnerID_Casting">GetOwnerID_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#gettargetid_casting" class="toc-h2 toc-link" data-title="GetTargetID_Casting">GetTargetID_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getsrcpos_cast" class="toc-h2 toc-link" data-title="GetSrcPos_Cast">GetSrcPos_Cast</a>
+                  </li>
+                  <li>
+                    <a href="#getsrcposx_casting" class="toc-h2 toc-link" data-title="GetSrcPosX_Casting">GetSrcPosX_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getsrcposy_casting" class="toc-h2 toc-link" data-title="GetSrcPosY_Casting">GetSrcPosY_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getsrcposz_casting" class="toc-h2 toc-link" data-title="GetSrcPosZ_Casting">GetSrcPosZ_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getdestpos_cast" class="toc-h2 toc-link" data-title="GetDestPos_Cast">GetDestPos_Cast</a>
+                  </li>
+                  <li>
+                    <a href="#getdestposx_casting" class="toc-h2 toc-link" data-title="GetDestPosX_Casting">GetDestPosX_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getdestposy_casting" class="toc-h2 toc-link" data-title="GetDestPosY_Casting">GetDestPosY_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getdestposz_casting" class="toc-h2 toc-link" data-title="GetDestPosZ_Casting">GetDestPosZ_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getcursorpos_cast" class="toc-h2 toc-link" data-title="GetCursorPos_Cast">GetCursorPos_Cast</a>
+                  </li>
+                  <li>
+                    <a href="#getcursorposx_casting" class="toc-h2 toc-link" data-title="GetCursorPosX_Casting">GetCursorPosX_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getcursorposy_casting" class="toc-h2 toc-link" data-title="GetCursorPosY_Casting">GetCursorPosY_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getcursorposz_casting" class="toc-h2 toc-link" data-title="GetCursorPosZ_Casting">GetCursorPosZ_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#getdelay_casting" class="toc-h2 toc-link" data-title="GetDelay_Casting)">GetDelay_Casting)</a>
+                  </li>
+                  <li>
+                    <a href="#gettime_casting" class="toc-h2 toc-link" data-title="GetTime_Casting">GetTime_Casting</a>
+                  </li>
+                  <li>
+                    <a href="#searchallchamp" class="toc-h2 toc-link" data-title="SearchAllChamp">SearchAllChamp</a>
+                  </li>
+                  <li>
+                    <a href="#getallobjectaroundanobject" class="toc-h2 toc-link" data-title="GetAllObjectAroundAnObject">GetAllObjectAroundAnObject</a>
+                  </li>
+                  <li>
+                    <a href="#getallunitaroundanobject" class="toc-h2 toc-link" data-title="GetAllUnitAroundAnObject">GetAllUnitAroundAnObject</a>
+                  </li>
+                  <li>
+                    <a href="#getenemychampcankillfastest" class="toc-h2 toc-link" data-title="GetEnemyChampCanKillFastest">GetEnemyChampCanKillFastest</a>
+                  </li>
+                  <li>
+                    <a href="#getenemychampcankillfastest_ap" class="toc-h2 toc-link" data-title="GetEnemyChampCanKillFastest_AP">GetEnemyChampCanKillFastest_AP</a>
+                  </li>
+                  <li>
+                    <a href="#getenemychampnearest" class="toc-h2 toc-link" data-title="GetEnemyChampNearest">GetEnemyChampNearest</a>
+                  </li>
+                  <li>
+                    <a href="#getenemychampminhp" class="toc-h2 toc-link" data-title="GetEnemyChampMinHP">GetEnemyChampMinHP</a>
+                  </li>
+                  <li>
+                    <a href="#getenemychampccaroundobject" class="toc-h2 toc-link" data-title="GetEnemyChampCCAroundObject">GetEnemyChampCCAroundObject</a>
+                  </li>
+                  <li>
+                    <a href="#countenemychamparoundobject" class="toc-h2 toc-link" data-title="CountEnemyChampAroundObject">CountEnemyChampAroundObject</a>
+                  </li>
+                  <li>
+                    <a href="#countallychamparoundobject" class="toc-h2 toc-link" data-title="CountAllyChampAroundObject">CountAllyChampAroundObject</a>
+                  </li>
+                  <li>
+                    <a href="#countenemyminionaroundobject" class="toc-h2 toc-link" data-title="CountEnemyMinionAroundObject">CountEnemyMinionAroundObject</a>
+                  </li>
+                  <li>
+                    <a href="#countenemyturretaroundobject" class="toc-h2 toc-link" data-title="CountEnemyTurretAroundObject">CountEnemyTurretAroundObject</a>
+                  </li>
+                  <li>
+                    <a href="#getenemyminionaroundobject" class="toc-h2 toc-link" data-title="GetEnemyMinionAroundObject">GetEnemyMinionAroundObject</a>
+                  </li>
+                  <li>
+                    <a href="#getjunglemonster" class="toc-h2 toc-link" data-title="GetJungleMonster">GetJungleMonster</a>
+                  </li>
+                  <li>
+                    <a href="#countobjectcollision" class="toc-h2 toc-link" data-title="CountObjectCollision">CountObjectCollision</a>
+                  </li>
+                  <li>
+                    <a href="#getlastbatick" class="toc-h2 toc-link" data-title="GetLastBATick">GetLastBATick</a>
+                  </li>
+                  <li>
+                    <a href="#canmove" class="toc-h2 toc-link" data-title="CanMove">CanMove</a>
+                  </li>
+                  <li>
+                    <a href="#canattack" class="toc-h2 toc-link" data-title="CanAttack">CanAttack</a>
+                  </li>
+                  <li>
+                    <a href="#movetopos" class="toc-h2 toc-link" data-title="MoveToPos">MoveToPos</a>
+                  </li>
+                  <li>
+                    <a href="#ismoving" class="toc-h2 toc-link" data-title="IsMoving">IsMoving</a>
+                  </li>
+                  <li>
+                    <a href="#isdashing" class="toc-h2 toc-link" data-title="IsDashing">IsDashing</a>
+                  </li>
+                  <li>
+                    <a href="#getdestpos" class="toc-h2 toc-link" data-title="GetDestPos">GetDestPos</a>
+                  </li>
+                  <li>
+                    <a href="#getmovedestpointposx" class="toc-h2 toc-link" data-title="GetMoveDestPointPosX">GetMoveDestPointPosX</a>
+                  </li>
+                  <li>
+                    <a href="#getmovedestpointposy" class="toc-h2 toc-link" data-title="GetMoveDestPointPosY">GetMoveDestPointPosY</a>
+                  </li>
+                  <li>
+                    <a href="#getmovedestpointposz" class="toc-h2 toc-link" data-title="GetMoveDestPointPosZ">GetMoveDestPointPosZ</a>
+                  </li>
+                  <li>
+                    <a href="#getpredpos" class="toc-h2 toc-link" data-title="GetPredPos">GetPredPos</a>
+                  </li>
+                  <li>
+                    <a href="#getpredictionposx" class="toc-h2 toc-link" data-title="GetPredictionPosX">GetPredictionPosX</a>
+                  </li>
+                  <li>
+                    <a href="#getpredictionposy" class="toc-h2 toc-link" data-title="GetPredictionPosY">GetPredictionPosY</a>
+                  </li>
+                  <li>
+                    <a href="#getpredictionposz" class="toc-h2 toc-link" data-title="GetPredictionPosZ">GetPredictionPosZ</a>
+                  </li>
+                  <li>
+                    <a href="#blockmove" class="toc-h2 toc-link" data-title="BlockMove">BlockMove</a>
+                  </li>
+                  <li>
+                    <a href="#unblockmove" class="toc-h2 toc-link" data-title="UnBlockMove">UnBlockMove</a>
+                  </li>
+                  <li>
+                    <a href="#getitembyid" class="toc-h2 toc-link" data-title="GetItemByID">GetItemByID</a>
+                  </li>
+                  <li>
+                    <a href="#getitemid" class="toc-h2 toc-link" data-title="GetItemID">GetItemID</a>
+                  </li>
+                  <li>
+                    <a href="#buyitem" class="toc-h2 toc-link" data-title="BuyItem">BuyItem</a>
+                  </li>
+                  <li>
+                    <a href="#drawcirclegame" class="toc-h2 toc-link" data-title="DrawCircleGame">DrawCircleGame</a>
+                  </li>
+                  <li>
+                    <a href="#drawlinegame" class="toc-h2 toc-link" data-title="DrawLineGame">DrawLineGame</a>
+                  </li>
+                  <li>
+                    <a href="#gethealthbarpos" class="toc-h2 toc-link" data-title="GetHealthBarPos">GetHealthBarPos</a>
+                  </li>
+                  <li>
+                    <a href="#worldtominimap" class="toc-h2 toc-link" data-title="WorldToMiniMap">WorldToMiniMap</a>
+                  </li>
+                  <li>
+                    <a href="#worldtoscreen" class="toc-h2 toc-link" data-title="WorldToScreen">WorldToScreen</a>
+                  </li>
+                  <li>
+                    <a href="#drawlined3dx" class="toc-h2 toc-link" data-title="DrawLineD3DX">DrawLineD3DX</a>
+                  </li>
+                  <li>
+                    <a href="#drawborderboxd3dx" class="toc-h2 toc-link" data-title="DrawBorderBoxD3DX">DrawBorderBoxD3DX</a>
+                  </li>
+                  <li>
+                    <a href="#drawtextd3dx" class="toc-h2 toc-link" data-title="DrawTextD3DX">DrawTextD3DX</a>
+                  </li>
+                  <li>
+                    <a href="#getallbuffnameactive" class="toc-h2 toc-link" data-title="GetAllBuffNameActive">GetAllBuffNameActive</a>
+                  </li>
+                  <li>
+                    <a href="#getbuffname" class="toc-h2 toc-link" data-title="GetBuffName">GetBuffName</a>
+                  </li>
+                  <li>
+                    <a href="#getbuffbyname" class="toc-h2 toc-link" data-title="GetBuffByName">GetBuffByName</a>
+                  </li>
+                  <li>
+                    <a href="#getbufftype" class="toc-h2 toc-link" data-title="GetBuffType">GetBuffType</a>
+                  </li>
+                  <li>
+                    <a href="#countbuffbytype" class="toc-h2 toc-link" data-title="CountBuffByType">CountBuffByType</a>
+                  </li>
+                  <li>
+                    <a href="#getbufftimebegin" class="toc-h2 toc-link" data-title="GetBuffTimeBegin">GetBuffTimeBegin</a>
+                  </li>
+                  <li>
+                    <a href="#getbufftimeend" class="toc-h2 toc-link" data-title="GetBuffTimeEnd">GetBuffTimeEnd</a>
+                  </li>
+                  <li>
+                    <a href="#getbuffstack" class="toc-h2 toc-link" data-title="GetBuffStack">GetBuffStack</a>
+                  </li>
+                  <li>
+                    <a href="#getbuffcount" class="toc-h2 toc-link" data-title="GetBuffCount">GetBuffCount</a>
                   </li>
               </ul>
           </li>
@@ -462,238 +669,461 @@
 <p>Welcome to the TOIR API ! </p>
 
 <p>You can view code examples in the dark area to the right.</p>
-<h1 id='events'>Events</h1><h2 id='onload'>OnLoad()</h2>
+<h1 id='events'>Events</h1><h2 id='onload'>OnLoad</h2>
 <ul>
 <li>Called when a script is loaded.</li>
 </ul>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnLoad</span><span class="p">()</span>
     <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnLoad works"</span><span class="p">)</span>
 <span class="k">end</span>
-</code></pre><h2 id='ontick'>OnTick()</h2>
+</code></pre><h2 id='ontick'>OnTick</h2>
 <ul>
 <li>Trigger every tick.</li>
 </ul>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnTick</span><span class="p">()</span>
     <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnTick works"</span><span class="p">)</span>
 <span class="k">end</span>
-</code></pre><h2 id='onupdate'>OnUpdate()</h2>
+</code></pre><h2 id='onupdate'>OnUpdate</h2>
 <ul>
 <li>Trigger every screen updates.</li>
 </ul>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnUpdate</span><span class="p">()</span>
     <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnUpdate works"</span><span class="p">)</span>
 <span class="k">end</span>
-</code></pre><h2 id='ondraw'>OnDraw()</h2>
+</code></pre><h2 id='ondraw'>OnDraw</h2>
 <ul>
 <li>Trigger every screen updates.</li>
 </ul>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnDraw</span><span class="p">()</span>
     <span class="n">__PrintTextGame</span><span class="p">(</span><span class="s2">"OnDraw works"</span><span class="p">)</span>
 <span class="k">end</span>
-</code></pre><h2 id='onupdatebuff-unit-buff-stacks'>OnUpdateBuff(unit, buff, stacks)</h2>
+</code></pre><h2 id='onupdatebuff'>OnUpdateBuff</h2>
 <ul>
-<li>Trigger Everytime a buff is Updated.</li>
+<li>Trigger everytime a buff is updated.</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
+<td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">source</a></td>
+<td>table</td>
+</tr>
+<tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">unit</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-buff">buff</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 <tr>
 <td>stacks</td>
 <td>number</td>
-<td>description</td>
 </tr>
 </tbody></table>
-<pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnUpdateBuff</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="n">buff</span><span class="p">,</span> <span class="n">stacks</span><span class="p">)</span>
-    <span class="c1">--</span>
+<pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnUpdateBuff</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">buff</span><span class="p">,</span> <span class="n">stacks</span><span class="p">)</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Source Name: %s | Unit Name: %s | Apply Buff: %s | Stacks: %d"</span><span class="p">,</span>
+                <span class="n">source</span><span class="p">.</span><span class="n">CharName</span><span class="p">,</span> <span class="n">unit</span><span class="p">.</span><span class="n">CharName</span><span class="p">,</span> <span class="n">buff</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">stacks</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h2 id='onremovebuff-unit-buff'>OnRemoveBuff(unit, buff)</h2>
+</code></pre><h2 id='onremovebuff'>OnRemoveBuff</h2>
 <ul>
-<li>Trigger Everytime a buff is Removed.</li>
+<li>Trigger everytime a buff is removed.</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">unit</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-buff">buff</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 </tbody></table>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnRemoveBuff</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="n">buff</span><span class="p">)</span>
-    <span class="c1">--</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Unit Name: %s | Buff Removed: %s"</span><span class="p">,</span>
+                <span class="n">unit</span><span class="p">.</span><span class="n">CharName</span><span class="p">,</span> <span class="n">buff</span><span class="p">.</span><span class="n">Name</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h2 id='onprocessspell-unit-spell'>OnProcessSpell(unit, spell)</h2>
+</code></pre><h2 id='onprocessspell'>OnProcessSpell</h2>
 <ul>
-<li>Trigger when Someone Cast Anything.</li>
+<li>Trigger when someone cast anything.</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">unit</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-spell">spell</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 </tbody></table>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnProcessSpell</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="n">spell</span><span class="p">)</span>
-    <span class="c1">--</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Unit Name: %s Cast %s Windup: %d, Animation Time: %d"</span><span class="p">,</span>
+                <span class="n">unit</span><span class="p">.</span><span class="n">CharName</span><span class="p">,</span> <span class="n">spell</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">spell</span><span class="p">.</span><span class="n">Delay</span><span class="p">,</span> <span class="n">spell</span><span class="p">.</span><span class="n">AnimationTime</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h2 id='oncreateobject-unit'>OnCreateObject(unit)</h2>
+</code></pre><h2 id='oncreateobject'>OnCreateObject</h2>
 <ul>
-<li>Trigger everytime a new object is Created.</li>
+<li>Trigger everytime a new object is created.</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">unit</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 </tbody></table>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnCreateObject</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span>
-    <span class="c1">--</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Created Object: %s"</span><span class="p">,</span>
+                <span class="n">unit</span><span class="p">.</span><span class="n">Name</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h2 id='ondeleteobject-unit'>OnDeleteObject(unit)</h2>
+</code></pre><h2 id='ondeleteobject'>OnDeleteObject</h2>
 <ul>
-<li>Trigger everytime an object is Deleted.</li>
+<li>Trigger everytime an object is deleted.</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">unit</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 </tbody></table>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnDeleteObject</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span>
-    <span class="c1">--</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Deleted Object: %s"</span><span class="p">,</span>
+                <span class="n">unit</span><span class="p">.</span><span class="n">Name</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h2 id='onwndmsg-message-key'>OnWndMsg(message, key)</h2>
+</code></pre><h2 id='onwndmsg'>OnWndMsg</h2>
 <ul>
-<li>Trigger When You Click on Mouse/Keyboard with msg and keys.</li>
+<li>Trigger When you click on Mouse/Keyboard with msg and keys.</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>message</td>
 <td>number</td>
-<td>description</td>
 </tr>
 <tr>
 <td>key</td>
 <td>number</td>
-<td>description</td>
 </tr>
 </tbody></table>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnWndMsg</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-    <span class="c1">--</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Message: %d | Key: %d"</span><span class="p">,</span>
+                <span class="n">message</span><span class="p">,</span> <span class="n">key</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h2 id='ondocast-unit-spell'>OnDoCast(unit, spell)</h2>
+</code></pre><h2 id='ondocast'>OnDoCast</h2>
 <ul>
-<li>Trigger when the Spell Cast is done (after windup).</li>
+<li>Trigger when the spell cast is done (after windup).</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">unit</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-spell">spell</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 </tbody></table>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnDoCast</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="n">spell</span><span class="p">)</span>
-    <span class="c1">--</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Unit Name: %s Cast %s Windup: %d, Animation Time: %d"</span><span class="p">,</span>
+                <span class="n">unit</span><span class="p">.</span><span class="n">CharName</span><span class="p">,</span> <span class="n">spell</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">spell</span><span class="p">.</span><span class="n">Delay</span><span class="p">,</span> <span class="n">spell</span><span class="p">.</span><span class="n">AnimationTime</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h2 id='onplayanimation-unit-animation'>OnPlayAnimation(unit, animation)</h2>
+</code></pre><h2 id='onplayanimation'>OnPlayAnimation</h2>
 <ul>
-<li>Trigger Everytime when someone make an animation</li>
+<li>Trigger everytime when someone make an animation</li>
 </ul>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><a href="https://shulepin.github.io/ToirAPI/#onevent-unit">unit</a></td>
 <td>table</td>
-<td>description</td>
 </tr>
 <tr>
 <td>animation</td>
 <td>string</td>
-<td>description</td>
 </tr>
 </tbody></table>
 <pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nf">OnPlayAnimation</span><span class="p">(</span><span class="n">unit</span><span class="p">,</span> <span class="n">animation</span><span class="p">)</span>
-    <span class="c1">--</span>
+        <span class="n">__PrintTextGame</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span>
+                <span class="s2">"Unit Name: %s | Animation: %s"</span><span class="p">,</span>
+                <span class="n">unit</span><span class="p">.</span><span class="n">CharName</span><span class="p">,</span> <span class="n">animation</span>
+        <span class="p">))</span>
 <span class="k">end</span>
-</code></pre><h1 id='global-functions'>Global Functions</h1><h2 id='includefile-filename'>IncludeFile(fileName)</h2>
+</code></pre><h1 id='global-functions'>Global Functions</h1><h2 id='includefile'>IncludeFile</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>fileName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='getscriptpath'>GetScriptPath</h2>
+<ul>
+<li>Returns the path to the Scripts folder</li>
+</ul>
+<h2 id='setluacombo'>SetLuaCombo</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>state</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h2 id='setluaharass'>SetLuaHarass</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>state</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h2 id='setlualaneclear'>SetLuaLaneClear</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>state</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h2 id='setluabasicattackonly'>SetLuaBasicAttackOnly</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>state</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h2 id='setluamoveonly'>SetLuaMoveOnly</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>state</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h2 id='getdistance2d'>GetDistance2D</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x1</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z1</td>
+<td>number</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z2</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='setevade'>SetEvade</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>state</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h2 id='getevade'>GetEvade</h2><h2 id='setprinterrorlog'>SetPrintErrorLog</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>state</td>
+<td>boolean</td>
+</tr>
+</tbody></table>
+<h2 id='getkeypress'>GetKeyPress</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>key</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getkeycode'>GetKeyCode</h2><h2 id='isdodging'>IsDodging</h2><h2 id='istyping'>IsTyping</h2><h2 id='iswall'>IsWall</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getmousepos'>GetMousePos</h2><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">GetMousePos</span><span class="p">()</span>
+</code></pre><h2 id='getcursorpos'>GetCursorPos</h2><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">GetCursorPos</span><span class="p">()</span>
+</code></pre><h2 id='getmouseposx'>GetMousePosX</h2><h2 id='getmouseposy'>GetMousePosY</h2><h2 id='getmouserposz'>GetMouserPosZ</h2><h2 id='gettimegame'>GetTimeGame</h2><h2 id='gettickcount'>GetTickCount</h2><h2 id='getlatency'>GetLatency</h2><h2 id='upspelllevel'>UpSpellLevel</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='setting_iscombouseq'>Setting_IsComboUseQ</h2><h2 id='setting_iscombousew'>Setting_IsComboUseW</h2><h2 id='setting_iscombousee'>Setting_IsComboUseE</h2><h2 id='setting_iscombouser'>Setting_IsComboUseR</h2><h2 id='setting_isharassuseq'>Setting_IsHarassUseQ</h2><h2 id='setting_isharassusew'>Setting_IsHarassUseW</h2><h2 id='setting_isharassusee'>Setting_IsHarassUseE</h2><h2 id='setting_isharassuser'>Setting_IsHarassUseR</h2><h2 id='setting_islaneclearuseq'>Setting_IsLaneClearUseQ</h2><h2 id='setting_islaneclearusew'>Setting_IsLaneClearUseW</h2><h2 id='setting_islaneclearusee'>Setting_IsLaneClearUseE</h2><h2 id='setting_islaneclearuser'>Setting_IsLaneClearUseR</h2><h2 id='cancast'>CanCast</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='castspelltarget'>CastSpellTarget</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='castspelltopos'>CastSpellToPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='castspelltopos_2'>CastSpellToPos_2</h2>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -702,127 +1132,1437 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>fileName</td>
-<td>##</td>
+<td>x1</td>
+<td>number</td>
+<td>start position</td>
+</tr>
+<tr>
+<td>z1</td>
+<td>number</td>
+<td>start position</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>number</td>
+<td>end position</td>
+</tr>
+<tr>
+<td>z2</td>
+<td>number</td>
+<td>end position</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+<td>spell index</td>
+</tr>
+</tbody></table>
+<h2 id='castspelltopredictionpos'>CastSpellToPredictionPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+<tr>
+<td>distantPrediction</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='releasespelltopos'>ReleaseSpellToPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='releasespelltopredictionpos'>ReleaseSpellToPredictionPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+<tr>
+<td>distantPrediction</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='releasespelltopredictionpos_2'>ReleaseSpellToPredictionPos_2</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+<tr>
+<td>distantPrediction</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='castspelltargetbyname'>CastSpellTargetByName</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellName</td>
 <td>string</td>
 </tr>
 </tbody></table>
-<h2 id='getscriptpath'>GetScriptPath()</h2>
+<h2 id='getspellindexbyname'>GetSpellIndexByName</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>spellName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='getspellnamebyindex'>GetSpellNameByIndex</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getspelllevel'>GetSpellLevel</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getcdspell'>GetCDSpell</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getcdexpiresspell'>GetCDExpiresSpell</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getammospell'>GetAmmoSpell</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='gettogglespell'>GetToggleSpell</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>spellIndex</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='basicattack'>BasicAttack</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getwindupba'>GetWindupBA</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getcdba'>GetCDBA</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getcdexpiresba'>GetCDExpiresBA</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getaadamagehitenemy'>GetAADamageHitEnemy</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObjectEnemy</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getspellcasting'>GetSpellCasting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getname_casting'>GetName_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getownerid_casting'>GetOwnerID_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='gettargetid_casting'>GetTargetID_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getsrcpos_cast'>GetSrcPos_Cast</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">GetSrcPos_Cast</span><span class="p">(</span><span class="n">pSpellCasting</span><span class="p">)</span>
+</code></pre><h2 id='getsrcposx_casting'>GetSrcPosX_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getsrcposy_casting'>GetSrcPosY_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getsrcposz_casting'>GetSrcPosZ_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getdestpos_cast'>GetDestPos_Cast</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">GetDestPos_Cast</span><span class="p">(</span><span class="n">pSpellCasting</span><span class="p">)</span>
+</code></pre><h2 id='getdestposx_casting'>GetDestPosX_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getdestposy_casting'>GetDestPosY_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getdestposz_casting'>GetDestPosZ_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getcursorpos_cast'>GetCursorPos_Cast</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">GetCursorPos_Cast</span><span class="p">(</span><span class="n">pSpellCasting</span><span class="p">)</span>
+</code></pre><h2 id='getcursorposx_casting'>GetCursorPosX_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getcursorposy_casting'>GetCursorPosY_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getcursorposz_casting'>GetCursorPosZ_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getdelay_casting'>GetDelay_Casting)</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='gettime_casting'>GetTime_Casting</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pSpellCasting</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='searchallchamp'>SearchAllChamp</h2>
 <ul>
-<li>Returns the path to the Scripts folder</li>
+<li>Return array pObjChamp:
+pObjChamp[1], pObjChamp[2], pObjChamp[3] ... pObjChamp[10]</li>
 </ul>
-<h2 id='setluacombo-bool-bisluacombo'>SetLuaCombo(bool bIsLuaCombo)</h2><h2 id='setluaharass-bool-bisluaharass'>SetLuaHarass(bool bIsLuaHarass)</h2><h2 id='setlualaneclear-bool-bislualaneclear'>SetLuaLaneClear(bool bIsLuaLaneClear)</h2><h2 id='setluabasicattackonly-bool-bisluabaonly'>SetLuaBasicAttackOnly(bool bIsLuaBaOnly)</h2><h2 id='setluamoveonly-bool-nisluamoveonly'>SetLuaMoveOnly(bool nIsLuaMoveOnly)</h2><h2 id='getdistance2d-fposx1-fposz1-fposx2-fposz2'>GetDistance2D(## fPosX1, ## fPosZ1, ## fPosX2, ## fPosZ2)</h2><h2 id='setevade-bool'>SetEvade(bool)</h2><h2 id='getevade'>GetEvade()</h2><h2 id='setprinterrorlog-bool'>SetPrintErrorLog(bool)</h2><h2 id='getkeypress-ncode'>GetKeyPress(nCode)</h2><h2 id='getkeycode'>GetKeyCode()</h2><h2 id='isdodging'>IsDodging()</h2><h2 id='istyping'>IsTyping()</h2><h2 id='iswall-fposx-fposy-fposz'>IsWall(## fPosX, ## fPosY, ## fPosZ)</h2><h2 id='getmousepos'>GetMousePos()</h2><h2 id='getcursorpos'>GetCursorPos()</h2><h2 id='getmouseposx'>GetMousePosX()</h2><h2 id='getmouseposy'>GetMousePosY()</h2><h2 id='getmouserposz'>GetMouserPosZ()</h2><h2 id='gettimegame'>GetTimeGame()</h2><h2 id='gettickcount'>GetTickCount()</h2><h2 id='getlatency'>GetLatency()</h2><h2 id='upspelllevel-int-nspellindex'>UpSpellLevel(int nSpellIndex)</h2><h2 id='setting_iscombouseq'>Setting_IsComboUseQ()</h2><h2 id='setting_iscombousew'>Setting_IsComboUseW()</h2><h2 id='setting_iscombousee'>Setting_IsComboUseE()</h2><h2 id='setting_iscombouser'>Setting_IsComboUseR()</h2><h2 id='setting_isharassuseq'>Setting_IsHarassUseQ()</h2><h2 id='setting_isharassusew'>Setting_IsHarassUseW()</h2><h2 id='setting_isharassusee'>Setting_IsHarassUseE()</h2><h2 id='setting_isharassuser'>Setting_IsHarassUseR()</h2><h2 id='setting_islaneclearuseq'>Setting_IsLaneClearUseQ()</h2><h2 id='setting_islaneclearusew'>Setting_IsLaneClearUseW()</h2><h2 id='setting_islaneclearusee'>Setting_IsLaneClearUseE()</h2><h2 id='setting_islaneclearuser'>Setting_IsLaneClearUseR()</h2><h2 id='cancast-int-nspellindex'>CanCast(int nSpellIndex)</h2><h2 id='castspelltarget-int-pobject-int-nspellindex'>CastSpellTarget(int pObject, int nSpellIndex)</h2><h2 id='castspelltopos-fposx-fposz-int-nspellindex'>CastSpellToPos(## fPosX, ## fPosZ, int nSpellIndex</h2><h2 id='castspelltopos_2-fstartposx-fstartposz-fendposx-fendposz-int-nspellindex'>CastSpellToPos_2(## fStartPosX, ## fStartPosZ, ## fEndPosX, ## fEndPosZ, int nSpellIndex)</h2><h2 id='castspelltopredictionpos-int-pobject-int-nspellindex-ndistantprediction'>CastSpellToPredictionPos(int pObject, int nSpellIndex, ## nDistantPrediction)</h2><h2 id='releasespelltopos-fposx-fposz-int-nspellindex'>ReleaseSpellToPos(## fPosX, ## fPosZ, int nSpellIndex)</h2><h2 id='releasespelltopredictionpos-int-pobject-int-nspellindex-ndistantprediction'>ReleaseSpellToPredictionPos(int pObject, int nSpellIndex, ## nDistantPrediction)</h2><h2 id='releasespelltopredictionpos_2-int-pobject-int-nspellindex-ndistantprediction'>ReleaseSpellToPredictionPos_2(int pObject, int nSpellIndex, ## nDistantPrediction)</h2><h2 id='castspelltargetbyname-int-pobject-spellname'>CastSpellTargetByName(int pObject, ## SpellName)</h2><h2 id='getspellindexbyname-spellname'>GetSpellIndexByName(## SpellName)</h2><h2 id='getspellnamebyindex-int-pobject-int-nspellindex'>GetSpellNameByIndex(int pObject, int nSpellIndex)</h2><h2 id='getspelllevel-int-pobject-int-nspellindex'>GetSpellLevel(int pObject, int nSpellIndex)</h2><h2 id='getcdspell-int-pobject-int-nspellindex'>GetCDSpell(int pObject, int nSpellIndex)</h2><h2 id='getcdexpiresspell-int-pobject-int-nspellindex'>GetCDExpiresSpell(int pObject, int nSpellIndex)</h2><h2 id='getammospell-pobject-nindex'>GetAmmoSpell(pObject, nIndex)</h2><h2 id='gettogglespell-pobject-nindex'>GetToggleSpell(pObject, nIndex)</h2><h2 id='basicattack-int-pobject'>BasicAttack(int pObject)</h2><h2 id='getwindupba-int-pobject'>GetWindupBA(int pObject)</h2><h2 id='getcdba-int-pobject'>GetCDBA(int pObject)</h2><h2 id='getcdexpiresba-int-pobject'>GetCDExpiresBA(int pObject)</h2><h2 id='getaadamagehitenemy-int-pobj_enemy'>GetAADamageHitEnemy(int pObj_Enemy)</h2><h1 id='onevent-unit'>OnEvent: Unit</h1>
+<h2 id='getallobjectaroundanobject'>GetAllObjectAroundAnObject</h2>
+<ul>
+<li>Return array pObject(include: pObjChamp, pObjMinion, pObjTurret, ...):<br>
+pObject[1], pObject[2], pObject[3] ... pObject[500]</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getallunitaroundanobject'>GetAllUnitAroundAnObject</h2>
+<ul>
+<li>Return table &quot;pUnit&quot;: pUnit[1], pUnit[2], pUnit[3] ... pUnit[300]</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getenemychampcankillfastest'>GetEnemyChampCanKillFastest</h2>
+<ul>
+<li>Return EnemyChamp can kill fastest by AD-damage</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getenemychampcankillfastest_ap'>GetEnemyChampCanKillFastest_AP</h2>
+<ul>
+<li>Return EnemyChamp can kill fastest by AP-damage</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getenemychampnearest'>GetEnemyChampNearest</h2>
+<ul>
+<li>Return EnemyChamp nearest</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getenemychampminhp'>GetEnemyChampMinHP</h2>
+<ul>
+<li>Return EnemyChamp MinHP</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getenemychampccaroundobject'>GetEnemyChampCCAroundObject</h2>
+<ul>
+<li>Return EnemyChamp CC around pObject </li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='countenemychamparoundobject'>CountEnemyChampAroundObject</h2>
+<ul>
+<li>Return count EnemyChamp around pObject </li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='countallychamparoundobject'>CountAllyChampAroundObject</h2>
+<ul>
+<li>Return count AllyChamp around pObject</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='countenemyminionaroundobject'>CountEnemyMinionAroundObject</h2>
+<ul>
+<li>Return count EnemyMinion around pObject </li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='countenemyturretaroundobject'>CountEnemyTurretAroundObject</h2>
+<ul>
+<li>Return count EnemyTurret around pObject </li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getenemyminionaroundobject'>GetEnemyMinionAroundObject</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getjunglemonster'>GetJungleMonster</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>range</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='countobjectcollision'>CountObjectCollision</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mode</td>
+<td>number</td>
+<td>0 - enemy minion, 1 - enemy minion or champ, 2 - enemy champ</td>
+</tr>
+<tr>
+<td>pObjEnemy</td>
+<td>number</td>
+<td>enemy pointer</td>
+</tr>
+<tr>
+<td>x1</td>
+<td>number</td>
+<td>start position</td>
+</tr>
+<tr>
+<td>z1</td>
+<td>number</td>
+<td>start position</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>number</td>
+<td>end position</td>
+</tr>
+<tr>
+<td>z2</td>
+<td>number</td>
+<td>end position</td>
+</tr>
+<tr>
+<td>width</td>
+<td>number</td>
+<td>the width</td>
+</tr>
+<tr>
+<td>range</td>
+<td>number</td>
+<td>the range</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>number</td>
+<td>the radius</td>
+</tr>
+</tbody></table>
+<h2 id='getlastbatick'>GetLastBATick</h2><h2 id='canmove'>CanMove</h2><h2 id='canattack'>CanAttack</h2><h2 id='movetopos'>MoveToPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='ismoving'>IsMoving</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='isdashing'>IsDashing</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getdestpos'>GetDestPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span> <span class="o">=</span> <span class="n">GetDestPos</span><span class="p">(</span><span class="n">pObject</span><span class="p">)</span>
+</code></pre><h2 id='getmovedestpointposx'>GetMoveDestPointPosX</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getmovedestpointposy'>GetMoveDestPointPosY</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getmovedestpointposz'>GetMoveDestPointPosZ</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getpredpos'>GetPredPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span> <span class="o">=</span> <span class="n">GetPredPos</span><span class="p">(</span><span class="n">pObject</span><span class="p">,</span> <span class="n">nDistant</span><span class="p">)</span>
+</code></pre><h2 id='getpredictionposx'>GetPredictionPosX</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getpredictionposy'>GetPredictionPosY</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getpredictionposz'>GetPredictionPosZ</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='blockmove'>BlockMove</h2><h2 id='unblockmove'>UnBlockMove</h2><h2 id='getitembyid'>GetItemByID</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>itemID</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getitemid'>GetItemID</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>slotItem</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='buyitem'>BuyItem</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>itemID</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='drawcirclegame'>DrawCircleGame</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>number</td>
+</tr>
+<tr>
+<td>color</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='drawlinegame'>DrawLineGame</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x1</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y1</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z1</td>
+<td>number</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y2</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z2</td>
+<td>number</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='gethealthbarpos'>GetHealthBarPos</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span>  <span class="n">GetHealthBarPos</span><span class="p">(</span><span class="n">pObj</span><span class="p">)</span>
+</code></pre><h2 id='worldtominimap'>WorldToMiniMap</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span>  <span class="n">WorldToMiniMap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+</code></pre><h2 id='worldtoscreen'>WorldToScreen</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span>  <span class="n">WorldToScreen</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+</code></pre><h2 id='drawlined3dx'>DrawLineD3DX</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x1</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y1</td>
+<td>number</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>number</td>
+</tr>
+<tr>
+<td>z2</td>
+<td>number</td>
+</tr>
+<tr>
+<td>width</td>
+<td>number</td>
+</tr>
+<tr>
+<td>color</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='drawborderboxd3dx'>DrawBorderBoxD3DX</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+</tr>
+<tr>
+<td>width</td>
+<td>number</td>
+</tr>
+<tr>
+<td>height</td>
+<td>number</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>number</td>
+</tr>
+<tr>
+<td>color</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='drawtextd3dx'>DrawTextD3DX</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+</tr>
+<tr>
+<td>color</td>
+<td>number</td>
+</tr>
+<tr>
+<td>fontHeight</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getallbuffnameactive'>GetAllBuffNameActive</h2>
+<ul>
+<li>Return array Buff Name: pBuffName[1], pBuffName[2], pBuffName[3] ... pBuffName[60]</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getbuffname'>GetBuffName</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pBuff</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getbuffbyname'>GetBuffByName</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>buffName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='getbufftype'>GetBuffType</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>buffName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='countbuffbytype'>CountBuffByType</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>buffType</td>
+<td>number</td>
+</tr>
+</tbody></table>
+<h2 id='getbufftimebegin'>GetBuffTimeBegin</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>buffName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='getbufftimeend'>GetBuffTimeEnd</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>buffName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='getbuffstack'>GetBuffStack</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>buffName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h2 id='getbuffcount'>GetBuffCount</h2>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pObject</td>
+<td>number</td>
+</tr>
+<tr>
+<td>buffName</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h1 id='onevent-unit'>OnEvent: Unit</h1>
 <table><thead>
 <tr>
 <th>Property</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>Addr</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Id</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>NetworkId</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>TeamId</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Type</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Name</td>
 <td>string</td>
-<td></td>
 </tr>
 <tr>
 <td>CharName</td>
 <td>string</td>
-<td></td>
 </tr>
 <tr>
 <td>OwnerName</td>
 <td>string</td>
-<td></td>
 </tr>
 <tr>
 <td>OwnerCharName</td>
 <td>string</td>
-<td></td>
 </tr>
 <tr>
 <td>Range</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Range_2</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Radius</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>MissileSpeed</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Width</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>OwnerId</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>TargetId</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>x</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>y</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>z</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>IsValid</td>
 <td>boolean</td>
-<td></td>
 </tr>
 <tr>
 <td>IsMe</td>
 <td>boolean</td>
-<td></td>
 </tr>
 </tbody></table>
 <h1 id='onevent-buff'>OnEvent: Buff</h1>
@@ -830,48 +2570,39 @@
 <tr>
 <th>Property</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>Addr</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>IsValid</td>
 <td>boolean</td>
-<td></td>
 </tr>
 <tr>
 <td>Type</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Name</td>
 <td>string</td>
-<td></td>
 </tr>
 <tr>
 <td>Stacks</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Count</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>BeginT</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>EndT</td>
 <td>number</td>
-<td></td>
 </tr>
 </tbody></table>
 <h1 id='onevent-spell'>OnEvent: Spell</h1>
@@ -879,118 +2610,95 @@
 <tr>
 <th>Property</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>Addr</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Slot</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Name</td>
 <td>string</td>
-<td></td>
 </tr>
 <tr>
 <td>Range</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Range_2</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Radius</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>MissileSpeed</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Width</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>OwnerId</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>TargetId</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>SourcePos_x</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>SourcePos_y</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>SourcePos_z</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>DestPos_x</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>DestPos_y</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>DestPos_z</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>CursorPos_x</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>CursorPos_y</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>CursorPos_z</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>AnimationTime</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>Delay</td>
 <td>number</td>
-<td></td>
 </tr>
 <tr>
 <td>TimeCast</td>
 <td>number</td>
-<td></td>
 </tr>
 </tbody></table>
 
