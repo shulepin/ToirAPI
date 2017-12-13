@@ -1,6 +1,6 @@
 # Events
 
-## OnLoad()
+## OnLoad
 
 * Called when a script is loaded.
 
@@ -10,7 +10,7 @@ function OnLoad()
 end
 ```
 
-## OnTick()
+## OnTick
 
 * Trigger every tick.
 
@@ -20,7 +20,7 @@ function OnTick()
 end
 ```
 
-## OnUpdate()
+## OnUpdate
 
 * Trigger every screen updates.
 
@@ -30,7 +30,7 @@ function OnUpdate()
 end
 ```
 
-## OnDraw()
+## OnDraw
 
 * Trigger every screen updates.
 
@@ -40,121 +40,146 @@ function OnDraw()
 end
 ```
 
-## OnUpdateBuff(unit, buff, stacks)
+## OnUpdateBuff
 
-* Trigger Everytime a buff is Updated.
+* Trigger everytime a buff is updated.
 
-Parameter | Type | Description
---------- | ------- | -----------
-[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
-[buff](https://shulepin.github.io/ToirAPI/#onevent-buff) | table | description
-stacks | number | description
+Parameter | Type 
+--------- | ------- 
+[source](https://shulepin.github.io/ToirAPI/#onevent-unit) | table 
+[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table 
+[buff](https://shulepin.github.io/ToirAPI/#onevent-buff) | table 
+stacks | number 
 
 ``` lua
-function OnUpdateBuff(unit, buff, stacks)
-    --
+function OnUpdateBuff(source, unit, buff, stacks)
+        __PrintTextGame(string.format(
+                "Source Name: %s | Unit Name: %s | Apply Buff: %s | Stacks: %d",
+                source.CharName, unit.CharName, buff.Name, stacks
+        ))
 end
 ```
 
-## OnRemoveBuff(unit, buff)
+## OnRemoveBuff
 
-* Trigger Everytime a buff is Removed.
+* Trigger everytime a buff is removed.
 
-Parameter | Type | Description
---------- | ------- | -----------
-[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
-[buff](https://shulepin.github.io/ToirAPI/#onevent-buff) | table | description
+Parameter | Type 
+--------- | ------- 
+[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table 
+[buff](https://shulepin.github.io/ToirAPI/#onevent-buff) | table 
 
 ``` lua
 function OnRemoveBuff(unit, buff)
-    --
+        __PrintTextGame(string.format(
+                "Unit Name: %s | Buff Removed: %s",
+                unit.CharName, buff.Name
+        ))
 end
 ```
 
-## OnProcessSpell(unit, spell)
+## OnProcessSpell
 
-* Trigger when Someone Cast Anything.
+* Trigger when someone cast anything.
 
-Parameter | Type | Description
---------- | ------- | -----------
+Parameter | Type 
+--------- | ------- 
 [unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
 [spell](https://shulepin.github.io/ToirAPI/#onevent-spell) | table | description
 
 ``` lua
 function OnProcessSpell(unit, spell)
-    --
+        __PrintTextGame(string.format(
+                "Unit Name: %s Cast %s Windup: %d, Animation Time: %d",
+                unit.CharName, spell.Name, spell.Delay, spell.AnimationTime
+        ))
 end
 ```
 
-## OnCreateObject(unit)
+## OnCreateObject
 
-* Trigger everytime a new object is Created.
+* Trigger everytime a new object is created.
 
-Parameter | Type | Description
---------- | ------- | -----------
+Parameter | Type 
+--------- | ------- 
 [unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
 
 ``` lua
 function OnCreateObject(unit)
-    --
+        __PrintTextGame(string.format(
+                "Created Object: %s",
+                unit.Name
+        ))
 end
 ```
 
-## OnDeleteObject(unit)
+## OnDeleteObject
 
-* Trigger everytime an object is Deleted.
+* Trigger everytime an object is deleted.
 
-Parameter | Type | Description
---------- | ------- | -----------
+Parameter | Type 
+--------- | ------- 
 [unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
 
 ``` lua
 function OnDeleteObject(unit)
-    --
+        __PrintTextGame(string.format(
+                "Deleted Object: %s",
+                unit.Name
+        ))
 end
 ```
 
-## OnWndMsg(message, key)
+## OnWndMsg
 
-* Trigger When You Click on Mouse/Keyboard with msg and keys.
+* Trigger When you click on Mouse/Keyboard with msg and keys.
 
-Parameter | Type | Description
---------- | ------- | -----------
-message | number | description
-key | number | description
+Parameter | Type 
+--------- | ------- 
+message | number 
+key | number 
 
 ``` lua
 function OnWndMsg(message, key)
-    --
+        __PrintTextGame(string.format(
+                "Message: %d | Key: %d",
+                message, key
+        ))
 end
 ```
 
-## OnDoCast(unit, spell)
+## OnDoCast
 
-* Trigger when the Spell Cast is done (after windup).
+* Trigger when the spell cast is done (after windup).
 
-Parameter | Type | Description
---------- | ------- | -----------
-[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
-[spell](https://shulepin.github.io/ToirAPI/#onevent-spell) | table | description
+Parameter | Type 
+--------- | ------- 
+[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table 
+[spell](https://shulepin.github.io/ToirAPI/#onevent-spell) | table 
 
 ``` lua
 function OnDoCast(unit, spell)
-    --
+        __PrintTextGame(string.format(
+                "Unit Name: %s Cast %s Windup: %d, Animation Time: %d",
+                unit.CharName, spell.Name, spell.Delay, spell.AnimationTime
+        ))
 end
 ```
 
-## OnPlayAnimation(unit, animation)
+## OnPlayAnimation
 
-* Trigger Everytime when someone make an animation
+* Trigger everytime when someone make an animation
 
-Parameter | Type | Description
---------- | ------- | -----------
-[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table | description
-animation | string | description
+Parameter | Type 
+--------- | ------- 
+[unit](https://shulepin.github.io/ToirAPI/#onevent-unit) | table 
+animation | string 
 
 ``` lua
 function OnPlayAnimation(unit, animation)
-    --
+        __PrintTextGame(string.format(
+                "Unit Name: %s | Animation: %s",
+                unit.CharName, animation
+        ))
 end
 ```

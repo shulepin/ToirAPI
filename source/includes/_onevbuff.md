@@ -1,7 +1,7 @@
 # OnEvent: Buff
 
-Property | Type | Description
---------- | ------- | -----------
+Property | Type 
+--------- | ------- 
 Addr | number |
 IsValid | boolean |
 Type | number |

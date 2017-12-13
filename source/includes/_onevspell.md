@@ -1,7 +1,7 @@
 # OnEvent: Spell
 
-Property | Type | Description
---------- | ------- | -----------
+Property | Type 
+--------- | ------- 
 Addr | number |
 Slot | number |
 Name | string |

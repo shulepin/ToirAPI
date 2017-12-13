@@ -1,5 +1,5 @@
 ---
-title: TOIR
+title: TOIR API
 
 language_tabs:
   - lua
